@@ -1,12 +1,10 @@
 function convertToNewRoman(n) {
   let romanNumber = "";
-  if (n / 1000 >= 1) {
-    romanNumber += "M".repeat(Math.round(n / 1000) - 1);
-  }
-  let x = n % 1000;
-  let y = 900;
+  let x = n % 3000;
+  let y = 1000;
   romanNumber +=
-    "CM".repeat(x / y) +
+    "M".repeat(x / y) +
+    "CM".repeat((x %= y) / (y = 900)) +
     "D".repeat((x %= y) / (y = 500)) +
     "CD".repeat((x %= y) / (y = 400)) +
     "C".repeat((x %= y) / (y = 100)) +

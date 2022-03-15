@@ -1,12 +1,10 @@
 function convertToOldRoman(n) {
   let romanNumber = "";
-  if (n / 1000 >= 1) {
-    romanNumber += "M".repeat(Math.round(n / 1000) - 1);
-  }
-  let x = n % 1000;
-  let y = 500;
+  let x = n % 3000;
+  let y = 1000;
   romanNumber +=
-    "D".repeat(x / y) +
+    "M".repeat(x / y) +
+    "D".repeat((x %= y) / (y = 500)) +
     "C".repeat((x %= y) / (y = 100)) +
     "L".repeat((x %= y) / (y = 50)) +
     "X".repeat((x %= y) / (y = 10)) +
