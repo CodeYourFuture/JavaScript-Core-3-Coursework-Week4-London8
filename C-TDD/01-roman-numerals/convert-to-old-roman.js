@@ -3,13 +3,15 @@ function convertToOldRoman(n) {
   if (n / 1000 >= 1) {
     romanNumber += "M".repeat(Math.round(n / 1000) - 1);
   }
+  let x = n % 1000;
+  let y = 500;
   romanNumber +=
-    "D".repeat((n % 1000) / 500) +
-    "C".repeat(((n % 1000) % 500) / 100) +
-    "L".repeat((((n % 1000) % 500) % 100) / 50) +
-    "X".repeat(((((n % 1000) % 500) % 100) % 50) / 10) +
-    "V".repeat((((((n % 1000) % 500) % 100) % 50) % 10) / 5) +
-    "I".repeat((((((n % 1000) % 500) % 100) % 50) % 10) % 5);
+    "D".repeat(x / y) +
+    "C".repeat((x %= y) / (y = 100)) +
+    "L".repeat((x %= y) / (y = 50)) +
+    "X".repeat((x %= y) / (y = 10)) +
+    "V".repeat((x %= y) / (y = 5)) +
+    "I".repeat((x %= y));
   return romanNumber;
 }
 
@@ -25,4 +27,4 @@ module.exports = convertToOldRoman;
 // | 500           | D             |
 // | 1000          | M             |
 
-console.log(convertToOldRoman(944));
+console.log(convertToOldRoman(8));
