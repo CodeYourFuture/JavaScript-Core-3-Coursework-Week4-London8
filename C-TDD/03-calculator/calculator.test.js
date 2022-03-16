@@ -27,3 +27,8 @@ test('Should ignore big numbers', () => {
 test('Should throw error for negative numbers', () => {
   expect(() => add('1,-1,3')).toThrowError('Negative numbers not allowed: -1');
 });
+
+test('Should throw error for multiple negative numbers', () => {
+  expect(() => add('1,-1,3,-3')).toThrowError('Negative numbers not allowed: -1,-3');
+  expect(() => add('1,-1,3,-3,-5,5')).toThrowError('Negative numbers not allowed: -1,-3,-5');
+});
