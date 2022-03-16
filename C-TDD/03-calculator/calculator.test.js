@@ -43,8 +43,5 @@ test("returns 0 if input is '1001', ignores numbers larger than 1000", () => {
 });
 
 test("throws on negatives", () => {
-  const input = "1,-3,2";
-  const result = add(input);
-
-  expect(() => result.toThrowError("Negatives not allowed: -3"));
+  expect(() => add("1,-3,2,-5").toThrowError("Negatives not allowed: -3, 5"));
 });
