@@ -4,8 +4,10 @@ test("remove vowels from all words in array", function () {
   // Arrange
   let inputArray = ["Irina", "Etza", "Daniel"];
   // Act
-  let expected = ["rn", "tz", "Dnl"];
+  let totals = ["rn", "tz", "Dnl"];
   // Assert
+  let output = removeVowelsFromWords(inputArray);
+  expect(output).toEqual(totals);
 });
 
 // example
