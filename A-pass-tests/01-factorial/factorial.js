@@ -15,6 +15,4 @@ function factorial(int) {
   return 1;
 }
 
-console.log(factorial(3));
-
 module.exports = factorial;
