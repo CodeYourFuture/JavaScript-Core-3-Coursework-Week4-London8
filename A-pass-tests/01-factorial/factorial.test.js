@@ -30,3 +30,11 @@ describe("Factorial", function () {
     expect(out5).toEqual(exp5);
   });
 });
+// test("Number greater than 100", () => {
+//   const person = "Etza";
+//   const expected = "Hello Etza";
+
+//   const output = greetPerson(person);
+
+//   expect(output).toEqual(expected);
+// });
