@@ -9,4 +9,3 @@ test("verifies a password", function () {
   // Assert
   expect(receivedResult).toEqual(expectedResult);
 });
-
