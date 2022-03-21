@@ -1,6 +1,6 @@
 // int is an integer
-// a factorial is the product of all non-negative integers
-// less than or equal to the initial number.
+// a factorial is the product of all non-negative integers ...int !== 0
+// less than or equal to the initial number. ...i<=int in for loop
 
 // for example the factorial of 5 is 120
 // 120 = 1 * 2 * 3 * 4 * 5
@@ -9,15 +9,9 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
-    // if(int > 1) {
-    //     //this is 2 * 1
-    //     return int * factorial(int -1);
-    // }else {
-    //     return 1;
-    // }
-
+    
     let answer = 1;
-    for (let i =1; i< int; i++){
+    for (let i =1; i<= int; i++){
         answer *= i;
     }
  return answer;
