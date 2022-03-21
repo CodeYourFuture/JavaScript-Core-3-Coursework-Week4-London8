@@ -7,7 +7,7 @@ test("returns largest number in array", function () {
   // Act
   let result = getLargestNumber(input)
   // Assert
-  expected(result).toEqual(expected)
+  expect(result).toEqual(expected)
 });
 
 // example

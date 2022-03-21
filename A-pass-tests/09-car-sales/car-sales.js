@@ -22,15 +22,15 @@
 
 
 function sales(carsSold) {
-  carsSold.map((element) =>{
-     let {name, price} = element;//let name = element.make .... let price = element.price
-     if(name === Ford &&
-        name === Honda && 
-        name === LandRover&&
-        name === Toyota){
-            //do something
-        }
-  })
+  // carsSold.map((element) =>{
+  //    let {name, price} = element;//let name = element.make .... let price = element.price
+  //    if(name === "Ford" &&
+  //       name === "Honda" && 
+  //       name === "LandRover"&&
+  //       name === "Toyota"){
+  //           //do something
+  //       }
+  // })
 }
 
 module.exports = sales;
