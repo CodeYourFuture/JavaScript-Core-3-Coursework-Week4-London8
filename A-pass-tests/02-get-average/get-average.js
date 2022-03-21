@@ -4,4 +4,10 @@
 
 function average(numbers) {}
 
+
+function average(numbers) {
+  let filteredArray = numbers.filter((element) => typeof element === "number");
+  return filteredArray.reduce((a, b) => a + b) / filteredArray.length;
+}
+
 module.exports = average;
