@@ -8,6 +8,8 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {}
+function factorial(int) {
+  return int === 0 ? 1 : Array.from({length: int}, (_, i) => i + 1).reduce((a, b) => a * b)
+}
 
 module.exports = factorial;
