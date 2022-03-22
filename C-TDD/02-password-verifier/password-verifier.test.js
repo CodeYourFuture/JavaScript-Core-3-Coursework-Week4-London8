@@ -1,5 +1,5 @@
 
-const factorial = require("./password-verifier");
+const verify = require("./password-verifier");
 describe("requirement one", () => {
     test("return Password rejected if password is less than 8 characters", function () {
         // Arrange

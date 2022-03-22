@@ -1,21 +1,21 @@
-function verify (password) {
-    if (password.length < 8){
-        return "password rejected"
-    }else if (!password){
-        return "password rejected"
-    }else if (password.search(/[A-Z]/) < 1){
-        return "password rejected"
-    }else if (password.search(/[0-9]/) < 1){
-        return "password rejected"
-    }else {
-         return "password accepted"
+function verify(password) {
+    if (!password) {
+        return "Password rejected"
+    } else if (password.length < 8) {
+        return "Password rejected"
+    } else if (password.search(/[A-Z]/) < 1) {
+        return "Password rejected"
+    } else if (password.search(/[0-9]/) < 1) {
+        return "Password rejected"
+    } else {
+        return "Password accepted"
     }
-//   return password === null ||
-//       password.length < 8 ||
-//       !password.match(/[A-Z]/g) ||
-//       !password.match(/[0-9]/g) ?
-//       "Password rejected" :
-//       "Password accepted";
-//   }
+    //   return password === null ||
+    //       password.length < 8 ||
+    //       !password.match(/[A-Z]/g) ||
+    //       !password.match(/[0-9]/g) ?
+    //       "Password rejected" :
+    //       "Password accepted";
+    //   }
 }
 module.exports = verify;
