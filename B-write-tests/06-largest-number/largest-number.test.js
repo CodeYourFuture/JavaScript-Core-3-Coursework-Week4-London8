@@ -1,11 +1,11 @@
-const removeVowelsFromWords = require("./remove-vowels-in-array");
+let getLargestNumber = require("./largest-number");
 
-test("remove vowels from all words in array", function () {
+test("returns largest number in array", function () {
   // Arrange
-  const words = ["irina", "etza", "daniel"];
+  const numbers = [3, 21, 88, 4, 36]
+  const expected = 88
   // Act
-  const result = removeVowelsFromWords(words);
+  const output = getLargestNumber(numbers)
   // Assert
-  const expected = ["rn", "tz", "dnl"];
-  expect(result).toEqual(expected);
+  expect(output).toEqual(expected)
 });
