@@ -1,8 +1,19 @@
 function calculate(n) {
-  const nArr = n.toString().split(",");
-  return nArr.reduce((a, b) => +a + +b).toString();
+  let numbersArray = n.toString().split(",");
 
-  //2 negative numbers
+  for (number in numbersArray) {
+    if (number < 0) {
+      return `negatives not allowed: ${number}`;
+    }
+  }
+
+  for (let i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] > 1000) {
+      numbersArray[i] = 0;
+    }
+  }
+
+  return numbersArray.reduce((a, b) => +a + +b).toString();
 }
 
 module.exports = calculate;
