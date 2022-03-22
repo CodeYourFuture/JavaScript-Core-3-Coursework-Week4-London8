@@ -22,12 +22,12 @@
 
 
 function sales(carsSold) {
-  // carsSold.map((element) =>{
-  //    let {name, price} = element;//let name = element.make .... let price = element.price
-  //    if(name === "Ford" &&
-  //       name === "Honda" && 
-  //       name === "LandRover"&&
-  //       name === "Toyota"){
+  // carsSold.map({make,price} =>{
+  //   
+  //    if(make === "Ford" &&//make each if statement
+  //       make === "Honda" && //or ||
+  //       make === "Land Rover"&&
+  //       make === "Toyota"){
   //           //do something
   //       }
   // })
