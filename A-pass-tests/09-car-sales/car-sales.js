@@ -1,14 +1,13 @@
-
-    function sales(carsSold) {
-        const result = {};
-        carsSold.forEach((car) => {
-          if (car.make in result) {
-            obj[car.make] += car.price;
-          } else {
-            obj[car.make] = car.price;
-          }
-        });
-        return result;
+const sales = (carsSold) => {
+  const total = {};
+  carsSold.forEach(car => {
+      if (total[car.make]) {
+        total[car.make] += car["price"];  
+      } else {
+          total[car.make] = car["price"]
       }
+  });
+  return total;
+}
 
 module.exports = sales;
