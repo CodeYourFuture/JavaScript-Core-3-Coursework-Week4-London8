@@ -36,5 +36,5 @@ test("returns I if passed 90 as an argument", function () {
 });
 
 test("returns I if passed 1500 as an argument", function () {
-  expect(convertToNewRoman(1500)).toEqual("MC");
+  expect(convertToNewRoman(1500)).toEqual("MD");
 });

@@ -1,6 +1,5 @@
 function convertToNewRoman(n) {
   let roman = "";
-
   roman += "M".repeat(n / 1000);
   n %= 1000;
   roman += "CM".repeat(n / 900);
