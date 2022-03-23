@@ -9,6 +9,6 @@ test("returns I if passed 1 as an argument", function () {
   let output = convertToNewRoman(result)
 
   // Assert
-  expected(output).toEqual(expected)
+  expect(output).toEqual(expected)
 
 });
