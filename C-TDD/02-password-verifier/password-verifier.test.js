@@ -29,7 +29,7 @@ describe("requirement two", () => {
 describe("requirement three", () => {
   test("return Password rejected if password does not have at least 1 uppercase letter ", function () {
     // Arrange
-    let password = " SamanZahedi";
+    let password = " samanzahedi";
     // Act
     let result = verify(password);
     // Assert
@@ -42,7 +42,7 @@ describe("requirement three", () => {
 describe("requirement four", () => {
   test("return Password rejected if password does not have at least 1 number ", function () {
     // Arrange
-    let password = "SamanZahedi";
+    let password = "samanzahedi";
     // Act
     let result = verify(password);
     // Assert
