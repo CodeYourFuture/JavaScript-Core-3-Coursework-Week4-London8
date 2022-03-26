@@ -1,5 +1,5 @@
 function convertToOldRoman(n) {
-  var lookup = {
+  let lookup = {
       M: 1000,
       D: 500,
       C: 100,
@@ -10,7 +10,7 @@ function convertToOldRoman(n) {
     },
     roman = "",
     i;
-  for (i in lookup) {
+  for (let i in lookup) {
     while (n >= lookup[i]) {
       roman += i;
       n -= lookup[i];

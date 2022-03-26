@@ -17,4 +17,12 @@ function factorial(int) {
   return output;
 }
 
+// function factorialWithRecursion(n){
+//  if (n === 1 ){
+//    return 1
+//  } else {
+//    return n * factorialWithRecursion(n-1)
+//  }
+// }
+
 module.exports = factorial;

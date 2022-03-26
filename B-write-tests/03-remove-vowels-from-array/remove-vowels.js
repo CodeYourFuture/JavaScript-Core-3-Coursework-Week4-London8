@@ -1,6 +1,5 @@
 function removeVowels(word) {
   let characters = word.split("");
-
   let result = [];
 
   characters.forEach(function (character) {
@@ -19,7 +18,6 @@ function removeVowels(word) {
       result.push(character);
     }
   });
-
   return result.join("");
 }
 

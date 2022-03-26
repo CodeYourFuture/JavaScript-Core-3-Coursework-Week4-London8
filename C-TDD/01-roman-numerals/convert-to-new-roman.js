@@ -1,5 +1,5 @@
 function convertToNewRoman(n) {
-  var lookup = {
+  let lookup = {
       M: 1000,
       CM: 900,
       D: 500,
