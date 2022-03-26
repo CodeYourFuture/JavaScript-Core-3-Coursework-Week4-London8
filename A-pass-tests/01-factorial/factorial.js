@@ -8,6 +8,17 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {}
+function factorial(int) {
+    let factorialNumbersArray = [];
+    let i = int;
+    while(i >= 0) {
+        factorialNumbersArray.push(i);
+        
+        i--;
+    }
+    factorialNumbersArray[factorialNumbersArray.length-1] = 1;
+    return factorialNumbersArray.reduce((num1, num2) => num1 * num2)
+}
+
 
 module.exports = factorial;
