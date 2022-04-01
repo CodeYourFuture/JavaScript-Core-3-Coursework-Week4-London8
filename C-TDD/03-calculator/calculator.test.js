@@ -17,3 +17,12 @@ test("returns 1 if passed '1'", function () {
 
   expect(output).toEqual(expectedResult);
 });
+
+test("returns sum  if passed two numbers ", function () {
+  const stringNum = "1, 2";
+  const expectedResult = 3;
+
+  const output = add(stringNum);
+
+  expect(output).toEqual(expectedResult);
+});
