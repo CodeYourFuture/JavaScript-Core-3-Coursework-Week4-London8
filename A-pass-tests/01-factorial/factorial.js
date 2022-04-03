@@ -9,11 +9,11 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
-  let ans = 1;
+  let total = 1;
   for (let i = 1; i <= int; i++) {
-    ans *= i;
+    total *= i;
   }
-  return ans;
+  return total;
 }
 
 module.exports = factorial;

@@ -4,17 +4,13 @@ function removeVowels(word) {
   let result = [];
 
   characters.forEach(function (character) {
+    let lowerCaseCharacter = character.toLowerCase();
     if (
-      character !== "a" &&
-      character !== "o" &&
-      character !== "i" &&
-      character !== "e" &&
-      character !== "u" &&
-      character !== "A" &&
-      character !== "O" &&
-      character !== "I" &&
-      character !== "E" &&
-      character !== "U"
+      lowerCaseCharacter !== "a" &&
+      lowerCaseCharacter !== "o" &&
+      lowerCaseCharacter !== "i" &&
+      lowerCaseCharacter !== "e" &&
+      lowerCaseCharacter !== "u"
     ) {
       result.push(character);
     }

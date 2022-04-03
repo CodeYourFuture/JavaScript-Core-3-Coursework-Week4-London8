@@ -1,14 +1,14 @@
 function sales(carsSold) {
-  let answer = {};
+  let totalCarsSold = {};
   carsSold.forEach((car) => {
-    let item = car.make;
-    if (item in answer) {
-      answer[item] += car.price;
+    let makeOfCar = car.make;
+    if (makeOfCar in totalCarsSold) {
+      totalCarsSold[makeOfCar] += car.price;
     } else {
-      answer[item] = car.price;
+      totalCarsSold[makeOfCar] = car.price;
     }
   });
-  return answer;
+  return totalCarsSold;
 }
 
 module.exports = sales;
