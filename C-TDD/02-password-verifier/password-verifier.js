@@ -1,5 +1,4 @@
 function verify(password) {
-  let i = 0;
   if (
     password == null ||
     password.length < 8 ||
