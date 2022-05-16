@@ -26,5 +26,5 @@ function sales(carsSold) {
     }
 }
 
-console.log(sales(carsSold))
+
 module.exports = sales;
