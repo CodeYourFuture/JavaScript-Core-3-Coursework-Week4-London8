@@ -3,7 +3,8 @@
 // be sure to exclude the strings
 
 function average(numbers) {
-    numbers.map( ()=> () ) ;
+    numbers = numbers.filter((x) => typeof x === "number");
+   return numbers.reduce((a, b) => a + b) / numbers.length;
 }
 
 module.exports = average;

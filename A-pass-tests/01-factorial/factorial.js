@@ -9,13 +9,11 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
-    let i = int;
-    let f=0;
-    while (i >= 0) do {
-        f *= i ;
-        i -- ;
-    };
-    return (f) ;
-};
-
-module.exports = factorial;
+    let f = 1;
+   for (let i = 1; i < int + 1; i++) {
+     f *= i;
+    
+}
+return f;
+}
+module.exports = factorial ;
